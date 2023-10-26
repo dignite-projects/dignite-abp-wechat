@@ -8,7 +8,7 @@ using System.Web;
 namespace Dignite.Abp.Wechat.MiniProgram.Login;
 
 /// <summary>
-/// 基于IdentityServer的登陆中间件
+/// 微信公众号登陆中间件，向<see cref="IGrantValidationSender.ValidateAsync(string, string)"/>发起验证请求
 /// </summary>
 public class MiniProgramGrantValidationMiddleware
 {

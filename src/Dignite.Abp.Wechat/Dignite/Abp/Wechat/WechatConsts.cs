@@ -4,5 +4,5 @@ public static class WechatConsts
     /// <summary>
     /// The name of the "LoginProvider" used for WeChat union login.
     /// </summary>
-    public const string WechatUnionAuthenticationScheme = "wechat-union-login";
+    public const string WechatUnionLoginProvider = "wechat-union-login";
 }

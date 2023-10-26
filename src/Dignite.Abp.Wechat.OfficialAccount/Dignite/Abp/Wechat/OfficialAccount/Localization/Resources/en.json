@@ -1,0 +1,16 @@
+{
+  "culture": "en",
+  "texts": {
+    "Wechat.OfficialAccount:-1": "The system is busy, at this point please ask the developer to try again later.",
+    "Wechat.OfficialAccount:40001": "AppSecret is wrong or AppSecret doesn't belong to this public number, please ask the developer to confirm the correctness of the AppSecret",
+    "Wechat.OfficialAccount:40002": "Please make sure the grant_type field value is client_credential",
+    "Wechat.OfficialAccount:40003": "invalid openid",
+    "Wechat.OfficialAccount:40164": "The IP address of the calling interface is not in the whitelist, please set it in the interface IP whitelist.",
+    "Wechat.OfficialAccount:89503": "This IP call requires administrator confirmation, please contact the administrator",
+    "Wechat.OfficialAccount:89501": "This IP is waiting for administrator confirmation, please contact administrator",
+    "Wechat.OfficialAccount:89506": "This IP has been denied by the administrator twice in 24 hours, you cannot use this IP to call again in 24 hours",
+    "Wechat.OfficialAccount:89507": "This IP has been denied by the administrator once in 1 hour, and you may not use this IP to call again in 1 hour.",
+    "WechatOfficialAccountAppId": "Wechat Official Account Development App Id",
+    "WechatOfficialAccountSecret": "Wechat Official Account Development App Key"
+  }
+}

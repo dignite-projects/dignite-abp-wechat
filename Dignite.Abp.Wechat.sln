@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dignite.Abp.Wechat", "src\Dignite.Abp.Wechat\Dignite.Abp.Wechat.csproj", "{4861A916-66D2-451F-A179-1D947004A033}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2D7DCB0A-E070-447D-8EED-CC05C277E50F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dignite.Abp.Wechat.MiniProgram", "src\Dignite.Abp.Wechat.MiniProgram\Dignite.Abp.Wechat.MiniProgram.csproj", "{AE420E2A-D9A0-495A-BCC9-241968D2876B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dignite.Abp.Wechat.MiniProgram.IdentityServer", "src\Dignite.Abp.Wechat.MiniProgram.IdentityServer\Dignite.Abp.Wechat.MiniProgram.IdentityServer.csproj", "{5F1B64CC-33F5-4439-BA9F-6EF0582EC464}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dignite.Abp.Wechat.MiniProgram.OpenIddict", "src\Dignite.Abp.Wechat.MiniProgram.OpenIddict\Dignite.Abp.Wechat.MiniProgram.OpenIddict.csproj", "{9F11BBC1-1153-4228-ACC7-E6E6FB778A32}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dignite.Abp.Wechat.OfficialAccount", "src\Dignite.Abp.Wechat.OfficialAccount\Dignite.Abp.Wechat.OfficialAccount.csproj", "{768826D1-9604-4157-B9A4-6BBBF7AA5D0F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dignite.Abp.Wechat.OfficialAccount.IdentityServer", "src\Dignite.Abp.Wechat.OfficialAccount.IdentityServer\Dignite.Abp.Wechat.OfficialAccount.IdentityServer.csproj", "{296B1FE1-4B76-47EE-9562-778E071B4497}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dignite.Abp.Wechat.OfficialAccount.OpenIddict", "src\Dignite.Abp.Wechat.OfficialAccount.OpenIddict\Dignite.Abp.Wechat.OfficialAccount.OpenIddict.csproj", "{00B5668E-0876-4D8B-A861-FCE1A9CB3F56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4861A916-66D2-451F-A179-1D947004A033}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4861A916-66D2-451F-A179-1D947004A033}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4861A916-66D2-451F-A179-1D947004A033}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4861A916-66D2-451F-A179-1D947004A033}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE420E2A-D9A0-495A-BCC9-241968D2876B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE420E2A-D9A0-495A-BCC9-241968D2876B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE420E2A-D9A0-495A-BCC9-241968D2876B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE420E2A-D9A0-495A-BCC9-241968D2876B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F1B64CC-33F5-4439-BA9F-6EF0582EC464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F1B64CC-33F5-4439-BA9F-6EF0582EC464}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F1B64CC-33F5-4439-BA9F-6EF0582EC464}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F1B64CC-33F5-4439-BA9F-6EF0582EC464}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F11BBC1-1153-4228-ACC7-E6E6FB778A32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F11BBC1-1153-4228-ACC7-E6E6FB778A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F11BBC1-1153-4228-ACC7-E6E6FB778A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F11BBC1-1153-4228-ACC7-E6E6FB778A32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{768826D1-9604-4157-B9A4-6BBBF7AA5D0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{768826D1-9604-4157-B9A4-6BBBF7AA5D0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{768826D1-9604-4157-B9A4-6BBBF7AA5D0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{768826D1-9604-4157-B9A4-6BBBF7AA5D0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{296B1FE1-4B76-47EE-9562-778E071B4497}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{296B1FE1-4B76-47EE-9562-778E071B4497}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{296B1FE1-4B76-47EE-9562-778E071B4497}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{296B1FE1-4B76-47EE-9562-778E071B4497}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00B5668E-0876-4D8B-A861-FCE1A9CB3F56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00B5668E-0876-4D8B-A861-FCE1A9CB3F56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00B5668E-0876-4D8B-A861-FCE1A9CB3F56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00B5668E-0876-4D8B-A861-FCE1A9CB3F56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4861A916-66D2-451F-A179-1D947004A033} = {2D7DCB0A-E070-447D-8EED-CC05C277E50F}
+		{AE420E2A-D9A0-495A-BCC9-241968D2876B} = {2D7DCB0A-E070-447D-8EED-CC05C277E50F}
+		{5F1B64CC-33F5-4439-BA9F-6EF0582EC464} = {2D7DCB0A-E070-447D-8EED-CC05C277E50F}
+		{9F11BBC1-1153-4228-ACC7-E6E6FB778A32} = {2D7DCB0A-E070-447D-8EED-CC05C277E50F}
+		{768826D1-9604-4157-B9A4-6BBBF7AA5D0F} = {2D7DCB0A-E070-447D-8EED-CC05C277E50F}
+		{296B1FE1-4B76-47EE-9562-778E071B4497} = {2D7DCB0A-E070-447D-8EED-CC05C277E50F}
+		{00B5668E-0876-4D8B-A861-FCE1A9CB3F56} = {2D7DCB0A-E070-447D-8EED-CC05C277E50F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD724438-B3AC-4220-89BF-8B2AC7C7C443}
+	EndGlobalSection
+EndGlobal

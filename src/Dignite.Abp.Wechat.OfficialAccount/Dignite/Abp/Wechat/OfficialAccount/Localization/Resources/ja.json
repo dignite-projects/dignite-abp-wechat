@@ -1,0 +1,16 @@
+{
+  "culture": "zh-Hant",
+  "texts": {
+    "Wechat.OfficialAccount:-1": "システムが混み合っています。しばらくお待ちいただくか、後でお試しいただくようお願いいたします。",
+    "Wechat.OfficialAccount:40001": "AppSecretが誤っているか、この公式アカウントに所属していない可能性があります。AppSecretの正確性をご確認ください。",
+    "Wechat.OfficialAccount:40002": "grant_typeフィールドの値がclient_credentialであることを確認してください。",
+    "Wechat.OfficialAccount:40003": "無効なopenid",
+    "Wechat.OfficialAccount:40164": "APIを呼び出すIPアドレスがホワイトリストに含まれていません。IPホワイトリストで設定してください。",
+    "Wechat.OfficialAccount:89503": "このIPの呼び出しは管理者の確認が必要です。管理者に連絡してください。",
+    "Wechat.OfficialAccount:89501": "このIPは管理者の確認を待っています。管理者に連絡してください。",
+    "Wechat.OfficialAccount:89506": "24時間以内にこのIPは管理者による呼び出しの拒否が2回あり、24時間以内にこのIPを使用しての呼び出しができません。",
+    "Wechat.OfficialAccount:89507": "1時間以内にこのIPは管理者による呼び出しの拒否が1回あり、1時間以内にこのIPを使用しての呼び出しができません。",
+    "WechatOfficialAccountAppId": "WeChat公式アカウントのアプリケーションID",
+    "WechatOfficialAccountSecret": "WeChat公式アカウントのアプリケーションシークレット"
+  }
+}

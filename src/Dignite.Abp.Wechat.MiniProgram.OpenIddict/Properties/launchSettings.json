@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Dignite.Abp.Wechat.MiniProgram.OpenIddict.AspNetCore": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:61718;http://localhost:61719"
+    }
+  }
+}

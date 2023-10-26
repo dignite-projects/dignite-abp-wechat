@@ -1,7 +1,9 @@
 {
   "culture": "en",
   "texts": {
-    "ManageYourProfile":  "Manage your profile",
-    "SamplePageMessage": "A sample page for the Blogging module"
+    "Wechat.MiniProgram:-1": "The system is busy. Please wait for a moment or try again later.",
+    "Wechat.MiniProgram:40001": "AppSecret is incorrect when obtaining the access_token, or the access_token is invalid. Developers should carefully verify the correctness of AppSecret or check if the correct official account is being called.",
+    "WechatMiniProgramAppId": "Wechat Mini Program Development AppId",
+    "WechatMiniProgramSecret": "Wechat Mini Program Development AppSecret"
   }
 }

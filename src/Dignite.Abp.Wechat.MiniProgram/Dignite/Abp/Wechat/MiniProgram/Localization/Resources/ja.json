@@ -1,0 +1,9 @@
+{
+  "culture": "ja",
+  "texts": {
+    "Wechat.MiniProgram:-1": "システムが混み合っています。しばらくお待ちいただくか、後でお試しいただくようお願いいたします。",
+    "Wechat.MiniProgram:40001": "access_tokenの取得時にAppSecretが正しくないか、access_tokenが無効です。AppSecretの正確性を確認し、正しい公式アカウントへの呼び出しを行っているか確認してください。",
+    "WechatMiniProgramAppId": "Wechatミニプログラム開発 AppId",
+    "WechatMiniProgramSecret": "Wechatミニプログラム開発 AppSecret"
+  }
+}

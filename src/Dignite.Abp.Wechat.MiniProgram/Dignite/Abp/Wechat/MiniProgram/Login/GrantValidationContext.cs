@@ -20,11 +20,6 @@ public class GrantValidationContext
     public MiniProgramUserSession SessionToken { get; }
 
     /// <summary>
-    /// 微信小程序中获取到的用户信息
-    /// </summary>
-    public MiniProgramUserInfo UserInfo { get; }
-
-    /// <summary>
     /// 
     /// </summary>
     /// <param name="httpContext"></param>
@@ -32,11 +27,9 @@ public class GrantValidationContext
     /// <param name="userInfo"></param>
     public GrantValidationContext(
         HttpContext httpContext,
-        MiniProgramUserSession sessionToken,
-        MiniProgramUserInfo userInfo)
+        MiniProgramUserSession sessionToken)
     {
         HttpContext = httpContext;
         SessionToken = sessionToken;
-        UserInfo = userInfo;
     }
 }

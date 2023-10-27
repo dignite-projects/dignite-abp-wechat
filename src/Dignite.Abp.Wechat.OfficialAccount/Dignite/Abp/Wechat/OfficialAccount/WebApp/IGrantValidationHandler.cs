@@ -1,5 +1,4 @@
-﻿
-using System.Security.Claims;
+﻿using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace Dignite.Abp.Wechat.OfficialAccount.WebApp;

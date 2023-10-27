@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
-using System.Text.Json;
 using System.Threading.Tasks;
 using Dignite.Abp.Wechat.MiniProgram.OpenIddict;
 using Microsoft.AspNetCore.Authentication;
@@ -29,14 +28,11 @@ public class OpenIddictGrantValidator : ITokenExtensionGrant
                 throw new Exception($"请实现{nameof(IGrantValidationHandler)}，并注册依赖！");
 
             //微信小程序登陆的code
-            var code = context.HttpContext.Request.Query["code"];
-            var userInfo = JsonSerializer.Deserialize<MiniProgramUserInfo>(context.HttpContext.Request.Query["userInfo"], new JsonSerializerOptions());
+            var code = context.HttpContext.Request.Form["code"];
             var sessionResult = await _loginApiService.GetSessionTokenAsync(code);
-            userInfo.OpenId = sessionResult?.OpenId;
-            userInfo.UnionId = sessionResult?.UnionId;
 
             var claimsPrincipal = await handler.ExcuteAsync(
-                new GrantValidationContext(context.HttpContext, sessionResult, userInfo)
+                new GrantValidationContext(context.HttpContext, sessionResult)
                 );
 
             if (claimsPrincipal!=null)

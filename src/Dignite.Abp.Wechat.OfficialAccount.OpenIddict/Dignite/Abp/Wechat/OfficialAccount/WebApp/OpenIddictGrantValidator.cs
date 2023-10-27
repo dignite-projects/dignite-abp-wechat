@@ -29,8 +29,8 @@ public class OpenIddictGrantValidator : ITokenExtensionGrant
 
 
             //授权后拿到code和state
-            var code = context.HttpContext.Request.Query["code"];
-            var state = context.HttpContext.Request.Query["state"];
+            var code = context.HttpContext.Request.Form["code"];
+            var state = context.HttpContext.Request.Form["state"];
 
             //换取token
             var sessionResult = await _apiService.ExchangeAccessTokenAsync(code, state);

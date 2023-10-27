@@ -1,9 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
-using System;
+﻿using System;
 using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;
-using System.Web;
+using Microsoft.AspNetCore.Http;
 
 namespace Dignite.Abp.Wechat.MiniProgram.Login;
 
@@ -33,10 +32,8 @@ public class MiniProgramGrantValidationMiddleware
                 await _next(context);
                 return;
             }
-            var userInfo = request.Query["userInfo"];
-            userInfo = HttpUtility.UrlDecode(userInfo);
             var code = request.Query["code"];
-            var result = await _grantValidationSender.ValidateAsync(code, userInfo);
+            var result = await _grantValidationSender.ValidateAsync(code);
 
             await context.Response.WriteAsync(JsonSerializer.Serialize(result));
         }

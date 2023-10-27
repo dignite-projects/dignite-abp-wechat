@@ -30,7 +30,7 @@ public class IdentityServerGrantValidationSender : IGrantValidationSender, ITran
         _accessor = accessor;
     }
 
-    public async Task<OAuthAccessToken> ValidateAsync(string code, string userInfo)
+    public async Task<OAuthAccessToken> ValidateAsync(string code)
     {
         var grant_type = IdentityServerConsts.WechatMiniProgramGrantType;
         var client_id = _identityServerAuthOptions.ClientId;
@@ -43,7 +43,6 @@ public class IdentityServerGrantValidationSender : IGrantValidationSender, ITran
                 new KeyValuePair<string, string>("grant_type", grant_type),
                 new KeyValuePair<string, string>("client_id", client_id),
                 new KeyValuePair<string, string>("scope", scopes),
-                new KeyValuePair<string, string>("userInfo", userInfo),
                 new KeyValuePair<string, string>("code", code)
             });
         content.Headers.ContentType = new MediaTypeHeaderValue("application/x-www-form-urlencoded");

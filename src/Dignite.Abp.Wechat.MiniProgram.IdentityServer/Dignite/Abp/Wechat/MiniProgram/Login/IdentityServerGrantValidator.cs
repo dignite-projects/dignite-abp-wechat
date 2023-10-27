@@ -37,13 +37,10 @@ public class IdentityServerGrantValidator : IExtensionGrantValidator
 
             //微信小程序登陆的code
             var code = context.Request.Raw["code"];
-            var userInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<MiniProgramUserInfo>(context.Request.Raw["userInfo"]);
             var sessionResult = await _loginApiService.GetSessionTokenAsync(code);
-            userInfo.OpenId = sessionResult?.OpenId;
-            userInfo.UnionId = sessionResult?.UnionId;
 
             var claimsPrincipal = await handler.ExcuteAsync(
-                new GrantValidationContext(httpContext, sessionResult, userInfo)
+                new GrantValidationContext(httpContext, sessionResult)
                 );
 
 

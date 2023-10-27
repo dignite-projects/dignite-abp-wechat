@@ -29,7 +29,7 @@ public class OpenIddictGrantValidationSender : IGrantValidationSender, ITransien
         _accessor = accessor;
     }
 
-    public async Task<OAuthAccessToken> ValidateAsync(string code, string userInfo)
+    public async Task<OAuthAccessToken> ValidateAsync(string code)
     {
         var grant_type = OpenIddictConsts.ExtensionGrantName;
         var client_id = _openIddictAuthOptions.ClientId;
@@ -42,7 +42,6 @@ public class OpenIddictGrantValidationSender : IGrantValidationSender, ITransien
                 new KeyValuePair<string, string>("grant_type", grant_type),
                 new KeyValuePair<string, string>("client_id", client_id),
                 new KeyValuePair<string, string>("scope", scopes),
-                new KeyValuePair<string, string>("userInfo", userInfo),
                 new KeyValuePair<string, string>("code", code)
             });
         content.Headers.ContentType = new MediaTypeHeaderValue("application/x-www-form-urlencoded");

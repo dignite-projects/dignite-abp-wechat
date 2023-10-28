@@ -10,7 +10,7 @@ public class MiniProgramUserSession : WechatResult
     /// <summary>
     /// 用户唯一标识
     /// </summary>
-    [JsonPropertyName("OpenId")]
+    [JsonPropertyName("openid")]
     public string OpenId { get; set; }
 
     /// <summary>

@@ -10,7 +10,7 @@ public class OfficialAccountConsts
     /// <summary>
     /// The name of the "LoginProvider" used for WeChat web app third-party login.
     /// </summary>
-    public const string AuthenticationScheme = "wechat-webapp";
+    public const string OfficialAccountLoginProvider = "wechat-official-account";
 
 
     /// <summary>

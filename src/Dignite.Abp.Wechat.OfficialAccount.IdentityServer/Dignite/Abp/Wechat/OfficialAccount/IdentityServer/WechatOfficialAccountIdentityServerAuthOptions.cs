@@ -1,4 +1,4 @@
-﻿namespace Dignite.Abp.Wechat.MiniProgram.OpenIddict;
+﻿namespace Dignite.Abp.Wechat.OfficialAccount.IdentityServer;
 
 public class WechatOfficialAccountIdentityServerAuthOptions
 {

@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Dignite.Abp.Wechat.OpenPlatform.OpenIddict": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:63964;http://localhost:63965"
+    }
+  }
+}

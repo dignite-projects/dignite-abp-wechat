@@ -5,7 +5,6 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using Dignite.Abp.Wechat.MiniProgram.OpenIddict;
 using Dignite.Abp.Wechat.OfficialAccount.IdentityServer;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;

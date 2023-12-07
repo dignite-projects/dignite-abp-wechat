@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace Dignite.Abp.Wechat.OpenPlatform.WebsiteApp;
 
 /// <summary>
-/// 微信公众号登陆中间件，向<see cref="IGrantValidationSender.ValidateAsync(string, string)"/>发起验证请求
+/// 微信开放平台登陆中间件，向<see cref="IGrantValidationSender.ValidateAsync(string, string)"/>发起验证请求
 /// </summary>
 public class WebsiteAppGrantValidationMiddleware
 {

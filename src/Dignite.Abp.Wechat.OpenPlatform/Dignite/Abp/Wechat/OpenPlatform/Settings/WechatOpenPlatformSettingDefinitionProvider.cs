@@ -10,14 +10,14 @@ public class WechatOpenPlatformSettingDefinitionProvider : SettingDefinitionProv
     {
         var definitions = new SettingDefinition[] {
             new SettingDefinition(
-                name:WechatOpenPlatformSettings.AppId,
-                displayName:L("WechatOpenPlatformAppId"),
+                name:WechatOpenPlatformSettings.WebsiteAppId,
+                displayName:L("WechatOpenPlatformWebsiteAppId"),
                 isVisibleToClients:false,
                 isEncrypted:false),
 
             new SettingDefinition(
-                name:WechatOpenPlatformSettings.Secret,
-                displayName:L("WechatOpenPlatformAppSecret"),
+                name:WechatOpenPlatformSettings.WebsiteSecret,
+                displayName:L("WechatOpenPlatformWebsiteAppSecret"),
                 isVisibleToClients:false,
                 isEncrypted:false)
         };

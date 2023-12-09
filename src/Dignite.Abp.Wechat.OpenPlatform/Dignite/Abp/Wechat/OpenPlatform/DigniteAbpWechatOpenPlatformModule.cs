@@ -31,8 +31,5 @@ public class DigniteAbpWechatOpenPlatformModule : AbpModule
         {
             options.MapCodeNamespace("Wechat.OpenPlatform:", typeof(DigniteAbpWechatOpenPlatformModule));
         });
-
-        //Add WeChat official account configuration service
-        context.Services.AddWechatOpenPlatform();
     }
 }

@@ -19,11 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dignite.Abp.Wechat.Official
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dignite.Abp.Wechat.OfficialAccount.OpenIddict", "src\Dignite.Abp.Wechat.OfficialAccount.OpenIddict\Dignite.Abp.Wechat.OfficialAccount.OpenIddict.csproj", "{00B5668E-0876-4D8B-A861-FCE1A9CB3F56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dignite.Abp.Wechat.OpenPlatform", "src\Dignite.Abp.Wechat.OpenPlatform\Dignite.Abp.Wechat.OpenPlatform.csproj", "{FCFF2BB8-54EF-4B20-8C6F-29DC141C3C7F}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dignite.Abp.Wechat.OpenPlatform.IdentityServer", "src\Dignite.Abp.Wechat.OpenPlatform.IdentityServer\Dignite.Abp.Wechat.OpenPlatform.IdentityServer.csproj", "{59407114-4F64-4A2E-B7FA-7D0E5035B2CC}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dignite.Abp.Wechat.OpenPlatform.OpenIddict", "src\Dignite.Abp.Wechat.OpenPlatform.OpenIddict\Dignite.Abp.Wechat.OpenPlatform.OpenIddict.csproj", "{E912D3B5-22BC-4F81-89B2-FC26B13F6B43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dignite.Abp.Wechat.OpenPlatform", "src\Dignite.Abp.Wechat.OpenPlatform\Dignite.Abp.Wechat.OpenPlatform.csproj", "{FCFF2BB8-54EF-4B20-8C6F-29DC141C3C7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,14 +59,6 @@ Global
 		{FCFF2BB8-54EF-4B20-8C6F-29DC141C3C7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCFF2BB8-54EF-4B20-8C6F-29DC141C3C7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCFF2BB8-54EF-4B20-8C6F-29DC141C3C7F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{59407114-4F64-4A2E-B7FA-7D0E5035B2CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{59407114-4F64-4A2E-B7FA-7D0E5035B2CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{59407114-4F64-4A2E-B7FA-7D0E5035B2CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{59407114-4F64-4A2E-B7FA-7D0E5035B2CC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E912D3B5-22BC-4F81-89B2-FC26B13F6B43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E912D3B5-22BC-4F81-89B2-FC26B13F6B43}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E912D3B5-22BC-4F81-89B2-FC26B13F6B43}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E912D3B5-22BC-4F81-89B2-FC26B13F6B43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,8 +72,6 @@ Global
 		{296B1FE1-4B76-47EE-9562-778E071B4497} = {2D7DCB0A-E070-447D-8EED-CC05C277E50F}
 		{00B5668E-0876-4D8B-A861-FCE1A9CB3F56} = {2D7DCB0A-E070-447D-8EED-CC05C277E50F}
 		{FCFF2BB8-54EF-4B20-8C6F-29DC141C3C7F} = {2D7DCB0A-E070-447D-8EED-CC05C277E50F}
-		{59407114-4F64-4A2E-B7FA-7D0E5035B2CC} = {2D7DCB0A-E070-447D-8EED-CC05C277E50F}
-		{E912D3B5-22BC-4F81-89B2-FC26B13F6B43} = {2D7DCB0A-E070-447D-8EED-CC05C277E50F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FD724438-B3AC-4220-89BF-8B2AC7C7C443}

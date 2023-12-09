@@ -1,5 +1,7 @@
 {
   "culture": "en",
   "texts": {
+    "WechatOpenPlatformWebsiteAppId": "Wechat Website App Id",
+    "WechatOpenPlatformWebsiteAppSecret": "Wechat Website App Secret"
   }
 }

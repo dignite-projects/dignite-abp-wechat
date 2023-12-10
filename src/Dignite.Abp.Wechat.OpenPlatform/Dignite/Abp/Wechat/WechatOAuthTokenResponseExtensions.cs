@@ -2,9 +2,9 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.OAuth;
 
-namespace Dignite.Abp.Wechat.OpenPlatform.WebsiteApp.Authentication
+namespace Dignite.Abp.Wechat
 {
-    internal static class OAuthTokenResponseExtensions
+    internal static class WechatOAuthTokenResponseExtensions
     {
         public static string GetByKey(this OAuthTokenResponse response, string key)
         {

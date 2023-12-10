@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
+﻿using System.Security.Claims;
 
-namespace Dignite.Abp.Wechat.OpenPlatform.WebsiteApp.Authentication
+namespace Dignite.Abp.Wechat
 {
     /// <summary>
     /// Defines constants for the well-known claim types that can be assigned to a subject.
     /// This class cannot be inherited.
     /// </summary>
-    public static class WeixinOpenClaimTypes
+    public static class WechatClaimTypes
     {
         /// <summary>
         /// urn:weixin:unionid

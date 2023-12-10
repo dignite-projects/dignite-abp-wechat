@@ -16,18 +16,17 @@ using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Primitives;
-using Microsoft.Net.Http.Headers;
 using Base64UrlTextEncoder = Microsoft.AspNetCore.Authentication.Base64UrlTextEncoder;
 
 namespace Dignite.Abp.Wechat.OpenPlatform.WebsiteApp.Authentication;
-public class WechatHandler : OAuthHandler<WechatOptions>
+public class WebsiteAppHandler : OAuthHandler<WebsiteAppOptions>
 {
     /// <summary>
-    /// Initializes a new instance of <see cref="WechatHandler"/>.
+    /// Initializes a new instance of <see cref="WebsiteAppHandler"/>.
     /// </summary>
     /// <inheritdoc />
-    public WechatHandler(
-            IOptionsMonitor<WechatOptions> options, ILoggerFactory logger, UrlEncoder encoder, ISystemClock clock)
+    public WebsiteAppHandler(
+            IOptionsMonitor<WebsiteAppOptions> options, ILoggerFactory logger, UrlEncoder encoder, ISystemClock clock)
         : base(options, logger, encoder, clock)
     {
     }
@@ -274,15 +273,15 @@ public class WechatHandler : OAuthHandler<WechatOptions>
         {
             var authTokens = new List<AuthenticationToken>
             {
-                new AuthenticationToken { Name = WeixinOpenTokenNames.access_token, Value = tokens.AccessToken },
-                new AuthenticationToken { Name = WeixinOpenTokenNames.refresh_token, Value = tokens.RefreshToken },
-                new AuthenticationToken { Name = WeixinOpenTokenNames.openid, Value = tokens.GetOpenId() },
-                new AuthenticationToken { Name = WeixinOpenTokenNames.scope, Value = tokens.GetScope() }
+                new AuthenticationToken { Name = WechatTokenName.AccessToken, Value = tokens.AccessToken },
+                new AuthenticationToken { Name = WechatTokenName.RefreshToken, Value = tokens.RefreshToken },
+                new AuthenticationToken { Name = WechatTokenName.OpenId, Value = tokens.GetOpenId() },
+                new AuthenticationToken { Name = WechatTokenName.Scope, Value = tokens.GetScope() }
             };
             
             if (!string.IsNullOrEmpty(tokens.GetUnionId()))
             {
-                authTokens.Add(new AuthenticationToken { Name = WeixinOpenTokenNames.unionid, Value = tokens.GetUnionId() });
+                authTokens.Add(new AuthenticationToken { Name = WechatTokenName.UnionId, Value = tokens.GetUnionId() });
             }
             if (!string.IsNullOrEmpty(tokens.ExpiresIn))
             {
@@ -294,7 +293,7 @@ public class WechatHandler : OAuthHandler<WechatOptions>
                     var expiresAt = Clock.UtcNow + TimeSpan.FromSeconds(expiresIn);
                     authTokens.Add(new AuthenticationToken
                     {
-                        Name = WeixinOpenTokenNames.expires_at,
+                        Name = WechatTokenName.ExpiresAt,
                         Value = expiresAt.ToString("o", CultureInfo.InvariantCulture)
                     });
                 }

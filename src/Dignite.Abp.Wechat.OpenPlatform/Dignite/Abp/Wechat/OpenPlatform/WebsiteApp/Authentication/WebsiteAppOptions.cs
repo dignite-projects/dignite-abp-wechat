@@ -4,29 +4,29 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.OAuth;
 
 namespace Dignite.Abp.Wechat.OpenPlatform.WebsiteApp.Authentication;
-public class WechatOptions : OAuthOptions
+public class WebsiteAppOptions : OAuthOptions
 {
-    public WechatOptions()
+    public WebsiteAppOptions()
     {
-        CallbackPath = WechatDefaults.CallbackPath;
-        AuthorizationEndpoint = WechatDefaults.AuthorizationEndpoint;
-        TokenEndpoint = WechatDefaults.TokenEndpoint;
-        UserInformationEndpoint = WechatDefaults.UserInformationEndpoint;
-        LanguageCode = WeixinOpenLanguageCodes.zh_CN;
+        CallbackPath = WebsiteAppDefaults.CallbackPath;
+        AuthorizationEndpoint = WebsiteAppDefaults.AuthorizationEndpoint;
+        TokenEndpoint = WebsiteAppDefaults.TokenEndpoint;
+        UserInformationEndpoint = WebsiteAppDefaults.UserInformationEndpoint;
+        LanguageCode = Language.zh_CN;
         Scope.Add("snsapi_login");
 
         ClaimActions.MapJsonKey(ClaimTypes.NameIdentifier, "openid");
         ClaimActions.MapJsonKey(ClaimTypes.Name, "nickname");
 
-        ClaimActions.MapJsonKey(WeixinOpenClaimTypes.UnionId, "unionid");
-        ClaimActions.MapJsonKey(WeixinOpenClaimTypes.OpenId, "openid");
-        ClaimActions.MapJsonKey(WeixinOpenClaimTypes.NickName, "nickname");
-        ClaimActions.MapJsonKey(WeixinOpenClaimTypes.Sex, "sex");
-        ClaimActions.MapJsonKey(WeixinOpenClaimTypes.Province, "province");
-        ClaimActions.MapJsonKey(WeixinOpenClaimTypes.Country, "country");
-        ClaimActions.MapJsonKey(WeixinOpenClaimTypes.HeadImageUrl, "headimgurl");
-        ClaimActions.MapJsonKey(WeixinOpenClaimTypes.Privilege, "privilege");
-        ClaimActions.MapJsonKey(WeixinOpenClaimTypes.Scope, "scope");
+        ClaimActions.MapJsonKey(WechatClaimTypes.UnionId, "unionid");
+        ClaimActions.MapJsonKey(WechatClaimTypes.OpenId, "openid");
+        ClaimActions.MapJsonKey(WechatClaimTypes.NickName, "nickname");
+        ClaimActions.MapJsonKey(WechatClaimTypes.Sex, "sex");
+        ClaimActions.MapJsonKey(WechatClaimTypes.Province, "province");
+        ClaimActions.MapJsonKey(WechatClaimTypes.Country, "country");
+        ClaimActions.MapJsonKey(WechatClaimTypes.HeadImageUrl, "headimgurl");
+        ClaimActions.MapJsonKey(WechatClaimTypes.Privilege, "privilege");
+        ClaimActions.MapJsonKey(WechatClaimTypes.Scope, "scope");
     }
 
     /// <summary>
@@ -46,6 +46,7 @@ public class WechatOptions : OAuthOptions
 
         base.Validate();
     }
+
 
     // Wechat uses a non-standard term for this field.
     /// <summary>
@@ -69,5 +70,5 @@ public class WechatOptions : OAuthOptions
     /// 国家地区语言版本，支持zh_CN 简体（默认），zh_TW 繁体，en 英语等三种。
     /// </summary>
     /// <remarks>在获取用户信息时用到</remarks>
-    public WeixinOpenLanguageCodes LanguageCode { get; set; }
+    public Language LanguageCode { get; set; }
 }

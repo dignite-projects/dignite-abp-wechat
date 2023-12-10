@@ -1,39 +1,39 @@
-﻿namespace Dignite.Abp.Wechat.OpenPlatform.WebsiteApp.Authentication
+﻿namespace Dignite.Abp.Wechat
 {
     //
     // Summary:
     //     Defines constants for the well-known claim types that can be assigned to a subject.
     //     This class cannot be inherited.
-    public static class WeixinOpenTokenNames
+    public static class WechatTokenName
     {
         /// <summary>
         /// openid
         /// </summary>
-        public const string openid = "openid";
+        public const string OpenId = "openid";
 
         /// <summary>
         /// unionid
         /// </summary>
-        public const string unionid = "unionid";
+        public const string UnionId = "unionid";
 
         /// <summary>
         /// scope
         /// </summary>
-        public const string scope = "scope";
+        public const string Scope = "scope";
 
         /// <summary>
         /// access_token
         /// </summary>
-        public const string access_token = "access_token";
+        public const string AccessToken = "access_token";
 
         /// <summary>
         /// refresh_token
         /// </summary>
-        public const string refresh_token = "refresh_token";
+        public const string RefreshToken = "refresh_token";
 
         /// <summary>
         /// expires_at
         /// </summary>
-        public const string expires_at = "expires_at";
+        public const string ExpiresAt = "expires_at";
     }
 }

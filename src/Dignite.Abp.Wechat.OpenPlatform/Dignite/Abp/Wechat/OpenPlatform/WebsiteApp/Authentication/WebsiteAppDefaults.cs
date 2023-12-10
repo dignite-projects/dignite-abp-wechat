@@ -1,5 +1,5 @@
 ﻿namespace Dignite.Abp.Wechat.OpenPlatform.WebsiteApp.Authentication;
-public static class WechatDefaults
+public static class WebsiteAppDefaults
 {
     /// <summary>
     /// The default scheme for Wechat Open Platform Website authentication. The value is <c>wechat-open-website</c>.
@@ -9,7 +9,7 @@ public static class WechatDefaults
     /// <summary>
     /// The default display name for Wechat Open Platform Website authentication. Defaults to <c>Wechat</c>.
     /// </summary>
-    public static readonly string DisplayName = "Wechat";
+    public static readonly string DisplayName = "微信扫码登录";
 
     /// <summary>
     /// /signin-weixinopen

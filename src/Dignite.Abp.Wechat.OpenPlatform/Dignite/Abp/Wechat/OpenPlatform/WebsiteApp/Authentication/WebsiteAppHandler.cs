@@ -319,7 +319,7 @@ public class WebsiteAppHandler : OAuthHandler<WebsiteAppOptions>
     /// </summary>
     /// <param name="context">The <see cref="OAuthCodeExchangeContext"/>.</param>
     /// <returns>The response <see cref="OAuthTokenResponse"/>.</returns>
-    protected virtual async Task<OAuthTokenResponse> ExchangeCodeAsync(OAuthCodeExchangeContext context)
+    protected override async Task<OAuthTokenResponse> ExchangeCodeAsync(OAuthCodeExchangeContext context)
     {
         var tokenRequestParameters = new Dictionary<string, string>()
             {
